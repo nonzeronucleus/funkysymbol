@@ -2,13 +2,18 @@ import styled from 'styled-components'
 
 
 const Page = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
-// padding: 20px;
-  // background-color:blue;
-  // height: 100%;
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
 
-  font-family: "Inspiration")//, sans-serif;
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+
 `
 
 const TitleImg = styled.img`
