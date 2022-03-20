@@ -17,7 +17,7 @@ const Img = styled.img`
 
 const Header = styled.header`
 width:100%;
-background-color:cadetblue;
+background-color:brown;
 display: flex;
 
 
@@ -35,7 +35,18 @@ function App() {
         <Img src="./funkylogo.png" alt='logo'></Img>
       </Header>
       <Body>
-        We make games
+        <h1>
+          Who are we?
+        </h1>
+        <p>
+          We are Funky Symbol
+        </p>
+        <p>
+          You want more info?
+        </p>
+        <p>
+          We are a family who like to make games. Not necessarily good ones. But games nonetheless
+        </p>
       </Body>
     </Page>
   );
