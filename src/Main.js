@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const GameImg = styled.img`
   padding: 10px;
-  width: 20%;
+  width: 80%;
   object-fit: scale-down;  
 `
 
@@ -23,13 +23,10 @@ function Main() {
             Wordo
         </h2>
         <span>
-            <GameImg src="./standard-ss.jpeg" alt="standard"></GameImg>  
-            <GameImg src="./master-ss.jpeg" alt="standard"></GameImg>  
-            <GameImg src="./options-ss.jpeg" alt="standard"></GameImg>  
-            <GameImg src="./stats-ss.jpeg" alt="standard"></GameImg>  
+            <GameImg src="./screens.png" alt="screens"></GameImg>  
         </span>
         <p>
-            Classis word game. Try to figure out the hidden word. Guess a word and see how many correct letters you have, either in the right or the wrong place
+            Classic word game. Try to figure out the hidden word. Guess a word and see how many correct letters you have, either in the right or the wrong place
         </p>
         <p>
             Multiple modes available - either showing which letters are correct or, for a harder challenge, only how many you've got right
