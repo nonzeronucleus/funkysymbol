@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 import Main from './Main'
 
 const Page = styled.div`
@@ -21,16 +21,17 @@ const Header = styled.header`
 `
 
 const TitleImg = styled.img`
-  // padding-top: 20px;
-  // padding-bottom:10px;
+  max-height:128px;
+  padding-top: 20px;
+  padding-bottom:10px;
   width: 100%;
   height: 100%;
   object-fit: scale-down;  
 `
 
 
-const Body = styled.body`
-  padding:20px;
+const Body = styled.div`
+  // padding:20px;
   font-size: large;
   font-family: 'Josefin Sans', sans-serif;
   width: 90%;
@@ -41,7 +42,7 @@ const Body = styled.body`
 
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 0px;
 
 `
 
