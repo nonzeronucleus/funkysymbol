@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+// import styled from 'styled-components'
+import GameImg from "./GameImg";
 // import './ImgStyle.css'
 
 
@@ -9,18 +10,11 @@ import styled from 'styled-components'
 // `
 
 
-const TitleImg = styled.img`
-  max-height:128px;
-  padding-top: 20px;
-  padding-bottom:10px;
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;  
-`
+
 
 function Main() {
   return (
-    <>
+    <div>
         <h1>
             Who are we? 
         </h1>
@@ -33,7 +27,8 @@ function Main() {
         <h2>
             Wordo
         </h2>
-        <TitleImg src="./screens-ss.png" alt="screens"></TitleImg>  
+        <GameImg src="./screens-ss.png" alt='logo'/>
+
         <p>
             Classic word game. Try to figure out the hidden word. Guess a word and see how many correct letters you have, either in the right or the wrong place
         </p>
@@ -43,7 +38,7 @@ function Main() {
         <p>
             Custom modes also available to create your own game
         </p>
-    </>
+    </div>
   );
 }
 

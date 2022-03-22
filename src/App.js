@@ -6,11 +6,11 @@ import styled from 'styled-components'
 //   Link
 // } from "react-router-dom";
 import Main from './Main'
+import TitleImg from "./TitleImg";
 
 const Page = styled.div`
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
-  
+  // @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+  // @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 `
 
 const Header = styled.header`
@@ -20,14 +20,15 @@ const Header = styled.header`
   justify-content: center;
 `
 
-const TitleImg = styled.img`
-  max-height:128px;
-  padding-top: 20px;
-  padding-bottom:10px;
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;  
-`
+// const TitleImg = styled.img`
+//   max-height:128px;
+//   padding-top: 20px;
+//   padding-bottom:10px;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: scale-down;  
+// `
+
 
 
 const Body = styled.div`
@@ -49,10 +50,11 @@ const Body = styled.div`
 
 
 function App() {
+  console.log(process.env.REACT_APP_SC_DISABLE_SPEEDY)
   return (
     <Page className="App">
       <Header className="App-header">
-        <TitleImg src="./funkylogo.png" alt='logo'></TitleImg>
+        <TitleImg src="./funkylogo.png" alt='logo'/>
       </Header>
       <Body>
         <Main />
