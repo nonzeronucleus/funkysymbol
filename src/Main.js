@@ -19,7 +19,7 @@ function Main() {
             Who are we? 
         </h1>
         <p>
-            We are Funky Symbol. We are a family who like to make games. Not necessarily good ones. But games nonetheless
+            We are Funky Symbol. We are a family who like to make games. Not necessarily good ones. So far, we've made one.
         </p>
         <h1>
             Games
@@ -33,10 +33,21 @@ function Main() {
             Classic word game. Try to figure out the hidden word. Guess a word and see how many correct letters you have, either in the right or the wrong place
         </p>
         <p>
-            Multiple modes available - either showing which letters are correct or, for a harder challenge, only how many you've got right
+            Multiple modes available
+                <ul>
+                    <li>
+                        Standard - each letter is coloured based on whether it's in the word or not
+                    </li> 
+                    <li>
+                        Master - see how many letters you have correct, but not which ones
+                    </li> 
+                    <li>
+                        Custom - change rules, word lenght and number of guesses
+                    </li> 
+                </ul>
         </p>
         <p>
-            Custom modes also available to create your own game
+            Track your stats to see how well you're guessing and how many guesses you take
         </p>
     </div>
   );

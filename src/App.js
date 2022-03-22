@@ -9,8 +9,6 @@ import Main from './Main'
 import TitleImg from "./TitleImg";
 
 const Page = styled.div`
-  // @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
-  // @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 `
 
 const Header = styled.header`
@@ -34,6 +32,9 @@ const Header = styled.header`
 const Body = styled.div`
   // padding:20px;
   font-size: large;
+  @media (min-width: 768px) {
+    font-size: xx-large;
+  }
   font-family: 'Josefin Sans', sans-serif;
   width: 90%;
   max-width: 1024px;
@@ -44,7 +45,6 @@ const Body = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 0px;
-
 `
 
 
