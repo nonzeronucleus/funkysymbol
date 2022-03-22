@@ -34,18 +34,18 @@ function Main() {
         </p>
         <p>
             Multiple modes available
-                <ul>
-                    <li>
-                        Standard - each letter is coloured based on whether it's in the word or not
-                    </li> 
-                    <li>
-                        Master - see how many letters you have correct, but not which ones
-                    </li> 
-                    <li>
-                        Custom - change rules, word lenght and number of guesses
-                    </li> 
-                </ul>
         </p>
+        <ul>
+            <li>
+                Standard - each letter is coloured based on whether it's in the word or not
+            </li> 
+            <li>
+                Master - see how many letters you have correct, but not which ones
+            </li> 
+            <li>
+                Custom - change rules, word lenght and number of guesses
+            </li> 
+        </ul>
         <p>
             Track your stats to see how well you're guessing and how many guesses you take
         </p>
