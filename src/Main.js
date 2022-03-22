@@ -23,7 +23,7 @@ function Main() {
             Wordo
         </h2>
         <span>
-            <GameImg src="./screens.png" alt="screens"></GameImg>  
+            <GameImg src="./screens-ss.png" alt="screens"></GameImg>  
         </span>
         <p>
             Classic word game. Try to figure out the hidden word. Guess a word and see how many correct letters you have, either in the right or the wrong place
