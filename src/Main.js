@@ -1,11 +1,12 @@
-import styled from 'styled-components'
+// import styled from 'styled-components'
+import './ImgStyle.css'
 
 
-const GameImg = styled.img`
-  padding: 10px;
-  width: 80%;
-  object-fit: scale-down;  
-`
+// const GameImg = styled.img`
+//   padding: 10px;
+// //   width: 80%;
+//   object-fit: scale-down;  
+// `
 
 function Main() {
   return (
@@ -22,7 +23,7 @@ function Main() {
         <h2>
             Wordo
         </h2>
-        <GameImg src="./screens-ss.png" alt="screens"></GameImg>  
+        <img className="Inline-Img"  src="./screens-ss.png" alt="screens"></img>  
         <p>
             Classic word game. Try to figure out the hidden word. Guess a word and see how many correct letters you have, either in the right or the wrong place
         </p>
