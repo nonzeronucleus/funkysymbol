@@ -1,11 +1,12 @@
 import styled from 'styled-components'
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink
+} from "react-router-dom";
 import Main from './Main'
+import Privacy from './Privacy'
 import TitleImg from "./TitleImg";
 
 const Page = styled.div`
@@ -18,22 +19,12 @@ const Header = styled.header`
   justify-content: center;
 `
 
-// const TitleImg = styled.img`
-//   max-height:128px;
-//   padding-top: 20px;
-//   padding-bottom:10px;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: scale-down;  
-// `
-
-
-
 const Body = styled.div`
-  // padding:20px;
   font-size: large;
   @media (min-width: 768px) {
     font-size: xx-large;
+    padding-left:20px;
+    padding-right:20px;
   }
   font-family: 'Josefin Sans', sans-serif;
   width: 90%;
@@ -45,6 +36,63 @@ const Body = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 0px;
+  padding:0px;
+`
+
+
+
+const MenuBar = styled.nav `
+  width: 100%;
+  margin: 0 auto;
+
+  background-color:brown;
+  height: 100%;
+`
+
+
+const Menu = styled.ul `
+  width: 90%;
+  max-width: 1024px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height:32px;
+  @media (min-width: 768px) {
+    height: 64px;
+  }  
+`
+
+
+const MenuItem = styled.li`
+  display: inline;
+  &:hover a:not(.active) {
+    background-color: darkred;
+  }
+  padding-top: 16px;
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+  height: 100%;
+
+  .active {
+    background-color: floralwhite;
+    color:black;
+  }  
+`
+
+const StyledLink = styled(NavLink)`
+  text-align: center;
+  height: 40px;
+  padding-top: 8px;
+  @media (min-width: 768px) {
+    padding-top: 16px;
+  }
+  padding-left:16px;
+  padding-right:16px;
+  height: 75%;
+  display: inline-block;
+  text-decoration: none;
+  color:yellow;
 `
 
 
@@ -56,9 +104,22 @@ function App() {
       <Header className="App-header">
         <TitleImg src="./funkylogo.png" alt='logo'/>
       </Header>
-      <Body>
-        <Main />
-      </Body>
+        <Router>
+          <MenuBar>
+            <Body>
+              <Menu>
+                <MenuItem><StyledLink to="/" activeclassname="active">Home</StyledLink></MenuItem>
+                <MenuItem><StyledLink to="/privacy" activeclassname="active">Privacy Policy</StyledLink></MenuItem>
+              </Menu>
+            </Body>          
+          </MenuBar>
+          <Body>
+            <Routes>
+              <Route path="/" element={<Main />}/>            
+              <Route path="/privacy" element={<Privacy />}/>            
+            </Routes>
+          </Body>
+        </Router>        
     </Page>
   );
 }

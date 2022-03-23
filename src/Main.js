@@ -43,7 +43,7 @@ function Main() {
                 Master - see how many letters you have correct, but not which ones
             </li> 
             <li>
-                Custom - change rules, word lenght and number of guesses
+                Custom - change rules, word length and number of guesses
             </li> 
         </ul>
         <p>
