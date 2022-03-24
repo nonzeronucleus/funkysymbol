@@ -109,7 +109,7 @@ function App() {
             <Body>
               <Menu>
                 <MenuItem><StyledLink to="/" activeclassname="active">Home</StyledLink></MenuItem>
-                <MenuItem><StyledLink to="/privacy" activeclassname="active">Privacy Policy</StyledLink></MenuItem>
+                <MenuItem><StyledLink to="/privacy" activeclassname="active">Privacy</StyledLink></MenuItem>
               </Menu>
             </Body>          
           </MenuBar>
