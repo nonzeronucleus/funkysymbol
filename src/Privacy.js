@@ -7,19 +7,19 @@ function Privacy() {
             What personal data do we collect?
         </h2>
         <p>
-            None. We don't collect any data about you, your family, your pet or anyone else. We're not interested in you.
+            None. We don't collect any personal data about you, your family, your pet or anyone else. We're not interested in you.
         </p>
         <h2>
             How about any other data?
         </h2>
         <p>
-            We may track anonymous usage data, such as crash reports or startup times, in order to improve app performance and reliabilty. But as we're still not interested in you, we may or may not bother looking at the data.
+            We do not collect any anonymised data about you either.
         </p>
         <h2>
             What data do we share?
         </h2>
         <p>
-            Some of this anonymised data may be tracked via Apple. We don't share it with anyone else.
+            As we don't collect data, there is nothing to share.
         </p>
     </div>
 
